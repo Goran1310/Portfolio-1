@@ -22,7 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 // jquery link it in ‘app.js’ file
 app.use(express.static(__dirname + '/node_modules/jquery/dist/'));
-
+// typed.js link it in ‘app.js’ file
+app.use(express.static(__dirname + '/node_modules/typed.js/lib'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
