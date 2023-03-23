@@ -24,6 +24,8 @@ app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use(express.static(__dirname + '/node_modules/jquery/dist/'));
 // typed.js link it in ‘app.js’ file
 app.use(express.static(__dirname + '/node_modules/typed.js/lib'));
+// bootstrap-icons link it in ‘app.js’ file
+app.use(express.static(__dirname + '/node_modules/bootstrap-icons'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
