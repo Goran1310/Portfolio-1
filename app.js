@@ -18,6 +18,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// Bootstrap link it in ‘app.js’ file 
+app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
